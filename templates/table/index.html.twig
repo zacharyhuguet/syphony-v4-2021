@@ -6,17 +6,18 @@
 <style>
     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+    .color {color:{{color}};}
 </style>
 
 <div class="example-wrapper">
-    <h1>Table de {{ n }}</h1>
+    <h1 class = "color">Table de {{ n }} </h1>
     
-{% for {{i}} in users %}
-<table>
+{% for a in 0.. i %}
+<table class = "color">
     
-    <tr><td>{{ n }} * {{i}} = {{(n * i)}}</td></tr>
+    <tr><td>{{ n }} * {{a}} = {{n * a}}</td></tr>
     
-    </table>
+</table>
 {% endfor %}  
 
 </div>

@@ -12,10 +12,10 @@
 <div class="example-wrapper">
     <h1 class = "color">Table de {{ n }} </h1>
     
-{% for a in 0.. i %}
+{% for calculation in calculations %}
 <table class = "color">
     
-    <tr><td>{{ n }} * {{a}} = {{n * a}}</td></tr>
+    <tr><td>{{ calculation.indice }} * {{n}} = {{calculation.result}}</td></tr>
     
 </table>
 {% endfor %}  
